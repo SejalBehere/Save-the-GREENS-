@@ -7,25 +7,21 @@
 
 class Captain : public Creature
 {
-private: 
-    // Member Variables
+private:
     int captain_x;
     int captain_y;
     vector<Veggie*> collected_Veggies;
 
 public:
-    // Constructor
-    Captain(int captain_x, int captain_y); 
+    Captain(int captain_x, int captain_y);
 
-    // Member Functions
     void addVeggie(Veggie* veggie);
 
-    // Getter and setter functions
     int getcaptain_x();          
     int getcaptain_y(); 
     void setcaptain_coord(int, int); 
     vector<Veggie*> getCollected_Veggies();
-    void setCollected_Veggies();
+    void setCollected_Veggies(bool);
 };
 
 #endif // CAPTAIN_H
