@@ -1,12 +1,11 @@
 #include "Creature.h"
 
-Creature::Creature(string creature_symbol, int creature_x, int creature_y):FieldInhabitant(creature_symbol) //Constructor definition
+Creature::Creature(string creature_symbol, int creature_x, int creature_y):FieldInhabitant(creature_symbol)
 {
 
 }
 
-// Getter function definitions
-int Creature::getCreature_x() 
+int Creature::getCreature_x()
 {
     return creature_x;
 }
